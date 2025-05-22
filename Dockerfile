@@ -21,8 +21,7 @@ LABEL repo="https://github.com/cerbyinc/aws-iam-roles-anywhere-sidecar-credentia
 LABEL author="ada mancini <ada@replicated.com>"
 LABEL version=$APP_VERSION
 
-COPY --from=build /go/src/github.com/adamancini/aws-iam-roles-anywhere-sidecar-credential-helper/credential-helper /usr/local/bin/credential-helper
+COPY --from=build /go/src/github.com/cerbyinc/aws-iam-roles-anywhere-sidecar-credential-helper/credential-helper /usr/local/bin/credential-helper
 RUN chmod +x /usr/local/bin/credential-helper
 
 ENTRYPOINT [ "/usr/local/bin/credential-helper" ]
-

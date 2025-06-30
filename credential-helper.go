@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"time"
 
-	awsconfig "github.com/adamancini/aws-iam-roles-anywhere-sidecar-credential-helper/awsconfig"
+	awsconfig "github.com/cerbyinc/aws-iam-roles-anywhere-sidecar-credential-helper/awsconfig"
 )
 
 const defaultListenPort = ":3000"
